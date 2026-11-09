@@ -1,4 +1,4 @@
-##1. Project Overview
+#1. Project Overview
 The **Enterprise Job Application Tracker** is a production-grade, full-stack web application designed to streamline and manage career pipelines efficiently. Built with a modern **React** frontend and a high-performance **FastAPI** backend, the system allows candidates to track job applications, update recruitment statuses in real-time, and store records securely in a persistent cloud-hosted **Supabase PostgreSQL** database.
 ---
 
