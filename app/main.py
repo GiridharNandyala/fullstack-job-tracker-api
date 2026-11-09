@@ -11,17 +11,15 @@ from app import models, schemas, database, auth
 # Initialize FastAPI app
 app = FastAPI(title="Job Tracker API", version="2.0")
 
-# Enable CORS for Frontend (React.js / Vercel & Localhost)
-origins = [
-    "http://localhost:3000",
-    "http://localhost:5173",  # Vite default port
-    "https://fullstack-job-tracker-api.vercel.app",
-    "https://fullstack-job-tracker-boumjgp9f-giridharnandyala.vercel.app",
-]
-
+# Enable CORS for Frontend (React.js / Vercel & Localhost with Regex for dynamic preview URLs)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,  
+    allow_origins=[
+        "http://localhost:3000",
+        "http://localhost:5173",
+        "https://fullstack-job-tracker-api.vercel.app",
+    ],
+    allow_origin_regex=r"https://fullstack-job-tracker-.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
