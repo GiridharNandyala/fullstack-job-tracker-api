@@ -151,7 +151,7 @@ function App() {
           <tbody>
             {jobs.length > 0 ? (
               jobs.map((job) => (
-                <tr key={job.id} style={{ borderBottom: "1px solid #334155/50" }}>
+                <tr key={job.id} style={{ borderBottom: "1px solid #33415550" }}>
                   <td style={{ padding: "14px 12px", color: "#94a3b8" }}>#{job.id}</td>
                   <td style={{ padding: "14px 12px", fontWeight: "500", color: "#fff" }}>{job.title}</td>
                   <td style={{ padding: "14px 12px", color: "#cbd5e1" }}>{job.company}</td>
