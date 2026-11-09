@@ -11,10 +11,17 @@ from app import models, schemas, database, auth
 # Initialize FastAPI app
 app = FastAPI(title="Job Tracker API", version="2.0")
 
-# Enable CORS for Frontend (React.js / Streamlit)
+# Enable CORS for Frontend (React.js / Vercel & Localhost)
+origins = [
+    "http://localhost:3000",
+    "http://localhost:5173",  # Vite default port
+    "https://fullstack-job-tracker-api.vercel.app",
+    "https://fullstack-job-tracker-boumjgp9f-giridharnandyala.vercel.app",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # మీరు కావాలంటే నిర్దిష్టమైన URL కూడా పెట్టుకోవచ్చు ఉదా: ["http://localhost:3000"]
+    allow_origins=origins,  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
