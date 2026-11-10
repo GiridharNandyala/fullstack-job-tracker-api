@@ -86,7 +86,7 @@ The **Enterprise Job Application Tracker** is a production-grade, full-stack web
 ---
 
 ## 8. Project Structure
-
+```bash
 fullstack-job-tracker-api/
 │
 ├── app/                        # FastAPI Backend Application
