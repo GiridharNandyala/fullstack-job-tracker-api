@@ -50,8 +50,6 @@ The **Enterprise Job Application Tracker** is a production-grade, full-stack web
 ---
 
 ## 6. Architecture
-
-```text
 ┌──────────────────────────────────────────────────────────┐
 │                   React Frontend (Vercel)                │
 │    (State Management, Dark Theme UI, Axios HTTP Client)   │
@@ -72,7 +70,7 @@ The **Enterprise Job Application Tracker** is a production-grade, full-stack web
 │               Supabase PostgreSQL Cloud DB               │
 │       (Relational Storage: Users & Jobs Tables)          │
 └──────────────────────────────────────────────────────────┘
-```text
+
 ---
 
 ## 7. Technologies Used
