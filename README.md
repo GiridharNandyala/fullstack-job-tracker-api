@@ -14,6 +14,7 @@ The **Enterprise Job Application Tracker** is a production-grade, full-stack web
 ---
 
 ## 2. Live Application
+
 * **Frontend Web Application (Vercel)**: [https://fullstack-job-tracker-boumjgp9f-giridharnandyala.vercel.app](https://fullstack-job-tracker-boumjgp9f-giridharnandyala.vercel.app)
 * **Backend REST API (Render)**: [https://fullstack-job-tracker-api.onrender.com](https://fullstack-job-tracker-api.onrender.com)
 * **API Documentation (Swagger UI)**: [https://fullstack-job-tracker-api.onrender.com/docs](https://fullstack-job-tracker-api.onrender.com/docs)
@@ -21,6 +22,7 @@ The **Enterprise Job Application Tracker** is a production-grade, full-stack web
 ---
 
 ## 3. Project Objectives
+
 * **Pipeline Management**: Provide an intuitive interface to add, view, filter, and delete job applications.
 * **Secure User Data**: Implement robust user authentication to isolate candidate data per account.
 * **Decoupled Architecture**: Maintain a clear separation of concerns between client-side rendering and backend service layers.
@@ -29,6 +31,7 @@ The **Enterprise Job Application Tracker** is a production-grade, full-stack web
 ---
 
 ## 4. Key Features
+
 * **Authentication & Authorization**: Secure user registration and login flows using JWT (JSON Web Tokens) and passlib salted bcrypt password hashing.
 * **Dynamic CORS Integration**: Fully configured backend CORS policy supporting dynamic Vercel preview environments (`allow_origin_regex`).
 * **Real-time Pipeline Filtering**: Filter tracked job applications instantly by status (`Applied`, `Interviewing`, `Offered`, `Rejected`).
@@ -38,6 +41,7 @@ The **Enterprise Job Application Tracker** is a production-grade, full-stack web
 ---
 
 ## 5. How It Works
+
 1. **User Authentication**: The client submits credentials to `/register` or `/login`. Upon verification, the FastAPI backend responds with a JWT bearer access token.
 2. **Session Storage**: The React application securely stores the JWT in browser `localStorage` and includes it in the `Authorization` header for subsequent API requests.
 3. **Data Operations**: CRUD requests are sent via Axios to FastAPI endpoints, where SQLAlchemy ORM executes queried operations on the Supabase PostgreSQL database.
@@ -71,6 +75,7 @@ The **Enterprise Job Application Tracker** is a production-grade, full-stack web
 ---
 
 ## 7. Technologies Used
+
 * **Frontend**: React.js, Axios, HTML5, CSS3
 * **Backend**: Python 3.14, FastAPI, Uvicorn, Pydantic, SQLAlchemy ORM
 * **Authentication**: Passlib (Bcrypt), Python-JOSE (JWT)
@@ -80,6 +85,7 @@ The **Enterprise Job Application Tracker** is a production-grade, full-stack web
 ---
 
 ## 8. Project Structure
+
 fullstack-job-tracker-api/
 │
 ├── app/                        # FastAPI Backend Application
