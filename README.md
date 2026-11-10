@@ -50,6 +50,7 @@ The **Enterprise Job Application Tracker** is a production-grade, full-stack web
 ---
 
 ## 6. Architecture
+```bash
 ┌──────────────────────────────────────────────────────────┐
 │                   React Frontend (Vercel)                │
 │    (State Management, Dark Theme UI, Axios HTTP Client)   │
