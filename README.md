@@ -46,27 +46,28 @@ The **Enterprise Job Application Tracker** is a production-grade, full-stack web
 ---
 
 ## 6. Architecture
+
+```text
 ┌──────────────────────────────────────────────────────────┐
 │                   React Frontend (Vercel)                │
 │    (State Management, Dark Theme UI, Axios HTTP Client)   │
 └────────────────────────────┬─────────────────────────────┘
-│
-REST API Requests (JWT Auth)
-│
-▼
+                             │
+                  REST API Requests (JWT Auth)
+                             │
+                             ▼
 ┌──────────────────────────────────────────────────────────┐
 │                   FastAPI Backend (Render)               │
 │   (OAuth2 Auth, Pydantic Schemas, CORS Middleware)       │
 └────────────────────────────┬─────────────────────────────┘
-│
-SQLAlchemy ORM Queries
-│
-▼
+                             │
+                   SQLAlchemy ORM Queries
+                             │
+                             ▼
 ┌──────────────────────────────────────────────────────────┐
 │               Supabase PostgreSQL Cloud DB               │
 │       (Relational Storage: Users & Jobs Tables)          │
 └──────────────────────────────────────────────────────────┘
-
 ---
 
 ## 7. Technologies Used
@@ -82,7 +83,7 @@ SQLAlchemy ORM Queries
 fullstack-job-tracker-api/
 │
 ├── app/                        # FastAPI Backend Application
-│   ├── init.py
+│   ├── __init__.py
 │   ├── auth.py                 # Password Hashing & JWT Logic
 │   ├── database.py             # SQLAlchemy DB Session Config
 │   ├── main.py                 # FastAPI Routes & CORS Config
