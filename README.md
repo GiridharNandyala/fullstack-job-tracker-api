@@ -73,9 +73,9 @@ The **Enterprise Job Application Tracker** is a production-grade, full-stack web
 └──────────────────────────────────────────────────────────┘
 
 ---
-
-## 7. Technologies Used
 ```
+## 7. Technologies Used
+
 
 * **Frontend**: React.js, Axios, HTML5, CSS3
 * **Backend**: Python 3.14, FastAPI, Uvicorn, Pydantic, SQLAlchemy ORM
