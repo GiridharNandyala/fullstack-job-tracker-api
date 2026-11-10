@@ -110,7 +110,7 @@ fullstack-job-tracker-api/
 
 
 ---
-
+```
 ## 9. Local Installation
 
 ### Prerequisites
