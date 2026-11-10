@@ -72,6 +72,7 @@ The **Enterprise Job Application Tracker** is a production-grade, full-stack web
 │               Supabase PostgreSQL Cloud DB               │
 │       (Relational Storage: Users & Jobs Tables)          │
 └──────────────────────────────────────────────────────────┘
+```text
 ---
 
 ## 7. Technologies Used
